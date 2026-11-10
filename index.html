@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PHOLX — We build the systems your business runs on</title>
+  <meta name="description" content="End-to-end software, data, and security engineering — from legacy migrations to modern AI pipelines — built in Bangkok, shipped worldwide.">
+  <meta name="theme-color" content="#05060a">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ───────────── NAV ───────────── -->
+  <header id="nav" class="nav">
+    <nav class="nav__inner" aria-label="Primary">
+      <a href="#top" class="nav__logo" aria-label="PHOLX home">PHOLX</a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#stack">Solutions</a></li>
+        <li><a href="#why">About us</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="btn btn--primary btn--sm">Contact us</a>
+        <button id="nav-toggle" class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ───────────── HERO: pinned scroll sequence ───────────── -->
+    <section id="hero" class="seq" aria-label="PHOLX introduction">
+      <div class="seq__sticky">
+        <canvas id="seq-canvas" aria-hidden="true"></canvas>
+        <div class="seq__glow" aria-hidden="true"></div>
+        <div class="seq__scrim" aria-hidden="true"></div>
+
+        <!-- Beat 0 -->
+        <div class="beat beat--center beat--hero" data-beat>
+          <div class="beat__inner">
+            <p class="eyebrow grad-text">NEXT-GEN SOFTWARE ENGINEERING</p>
+            <h1 class="display">We build the systems your business runs on.</h1>
+            <p class="lede">End-to-end software, data, and security engineering — from legacy migrations to modern AI pipelines — built in Bangkok, shipped worldwide.</p>
+            <div class="flex flex-wrap justify-center gap-3 mt-8">
+              <a href="#contact" class="btn btn--primary">Get started
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+              <a href="#services" class="btn btn--ghost">Explore services</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beat 1 -->
+        <div class="beat beat--left" data-beat>
+          <div class="beat__inner">
+            <p class="beat__no">01 — Foundations</p>
+            <h2 class="headline">Engineered from the metal up.</h2>
+            <p class="lede">Assembly to Rust, COBOL to Go. We work at every layer, so nothing in your stack is a black box.</p>
+          </div>
+        </div>
+
+        <!-- Beat 2 -->
+        <div class="beat beat--right" data-beat>
+          <div class="beat__inner">
+            <p class="beat__no">02 — Intelligence</p>
+            <h2 class="headline">Data and AI, wired into the core.</h2>
+            <p class="lede">Pipelines, analytics and models that turn raw data into decisions, with security designed in, not bolted on.</p>
+          </div>
+        </div>
+
+        <!-- Beat 3 -->
+        <div class="beat beat--center" data-beat>
+          <div class="beat__inner">
+            <p class="beat__no">03 — Delivery</p>
+            <h2 class="headline">Built in Bangkok.<br>Shipped worldwide.</h2>
+            <a href="#contact" class="btn btn--light mt-8">Start a project</a>
+          </div>
+        </div>
+
+        <!-- Progress UI -->
+        <div class="seq__ui" aria-hidden="true">
+          <span id="seq-count" class="seq__count">01 / 04</span>
+          <span class="seq__bar"><i id="seq-bar"></i></span>
+          <span class="seq__hint" id="seq-hint">Scroll</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── SERVICES: bento ───────────── -->
+    <section id="services" class="section">
+      <div class="wrap">
+        <p class="eyebrow grad-text" data-reveal>WHAT WE DO</p>
+        <h2 class="headline" data-reveal>Our Services</h2>
+        <p class="lede lede--left" data-reveal>Five disciplines, one team. Pick one, or let us run the whole stack.</p>
+
+        <div class="bento">
+          <article class="card card--xl" data-reveal>
+            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+            <h3>IT &amp; Software Development</h3>
+            <p>Custom software and web application development tailored to drive your business forward.</p>
+            <ul class="chips"><li>Web apps</li><li>APIs</li><li>Legacy migration</li></ul>
+          </article>
+
+          <article class="card card--md" data-reveal>
+            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
+            <h3>Data Analytics &amp; AI</h3>
+            <p>Transform raw data into actionable business intelligence and smart automated insights.</p>
+            <ul class="chips"><li>BI</li><li>AI pipelines</li></ul>
+          </article>
+
+          <article class="card card--sm" data-reveal>
+            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <h3>Cybersecurity</h3>
+            <p>Protect your enterprise assets and systems with end-to-end threat protection and compliance.</p>
+          </article>
+
+          <article class="card card--sm" data-reveal>
+            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.7 1.5A4 4 0 0 0 6.5 19z"/></svg></span>
+            <h3>Cloud &amp; Infrastructure</h3>
+            <p>Scalable cloud integration and modern architecture management for seamless performance.</p>
+          </article>
+
+          <article class="card card--sm" data-reveal>
+            <span class="card__icon"><svg viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span>
+            <h3>Software &amp; Digital Platforms</h3>
+            <p>Enterprise platform modernization and digital ecosystem integration for unified operations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── STACK: interactive spec breakdown ───────────── -->
+    <section id="stack" class="section">
+      <div class="wrap">
+        <p class="eyebrow grad-text" data-reveal>UNDER THE HOOD</p>
+        <h2 class="headline" data-reveal>Our Tech Stack &amp; Expertise</h2>
+        <p class="lede lede--left" data-reveal>We leverage a diverse range of languages and technologies to deliver scalable solutions.</p>
+
+        <div class="spec" data-reveal>
+          <div id="spec-tabs" class="spec__tabs" role="tablist" aria-label="Technology categories"></div>
+          <div id="spec-panel" class="spec__panel" role="tabpanel" aria-live="polite"></div>
+        </div>
+
+        <div class="metrics" data-reveal>
+          <div><b data-count="4" data-suffix="">0</b><span>Engineering disciplines</span></div>
+          <div><b id="metric-tech" data-count="0">0</b><span>Languages &amp; tools</span></div>
+          <div><b data-count="5">0</b><span>Core service lines</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── WHY PHOLX ───────────── -->
+    <section id="why" class="section">
+      <div class="wrap">
+        <p class="eyebrow grad-text" data-reveal>WHY PHOLX</p>
+        <h2 class="headline" data-reveal>Why Choose PHOLX</h2>
+        <p class="lede lede--left" data-reveal>We build modern, high-quality digital solutions tailored specifically to drive your business efficiency and growth.</p>
+
+        <div class="why">
+          <div class="why__item" data-reveal>
+            <b><span data-count="100" data-suffix="%">0</span></b>
+            <span>Dedicated Support</span>
+          </div>
+          <div class="why__item" data-reveal>
+            <b>Modern</b>
+            <span>Tech Stack</span>
+          </div>
+          <div class="why__item" data-reveal>
+            <b>Custom</b>
+            <span>Tailored Solutions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── CTA / CONTACT (high-contrast inverse) ───────────── -->
+    <section id="contact" class="cta">
+      <div class="wrap cta__grid">
+        <div>
+          <p class="eyebrow cta__eyebrow" data-reveal>CONTACT US</p>
+          <h2 class="cta__title" data-reveal>Let’s build the system your business runs on.</h2>
+          <p class="cta__sub" data-reveal>Tell us what you’re trying to ship, migrate or secure. We’ll reply within one business day.</p>
+          <dl class="cta__meta" data-reveal>
+            <div><dt>Email</dt><dd><a href="mailto:hello@pholx.com">hello@pholx.com</a></dd></div>
+            <div><dt>Studio</dt><dd>Bangkok, Thailand</dd></div>
+          </dl>
+        </div>
+
+        <!-- Get a free access key at https://web3forms.com/ and paste it below -->
+        <form id="contact-form" class="form" data-reveal novalidate>
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="New enquiry from pholx.com">
+          <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
+
+          <label class="field"><span>Your name</span>
+            <input type="text" name="name" required autocomplete="name" placeholder="Jane Doe">
+          </label>
+          <label class="field"><span>Your email</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="jane@company.com">
+          </label>
+          <label class="field"><span>Your message</span>
+            <textarea name="message" rows="5" required placeholder="What are you building?"></textarea>
+          </label>
+          <button type="submit" class="btn btn--dark btn--block">Send message</button>
+          <p id="form-status" class="form__status" role="status"></p>
+        </form>
+      </div>
+
+      <footer class="foot wrap">
+        <p>© 2026 PHOLX CO., LTD. All rights reserved.</p>
+        <div><a href="#">Privacy policy</a><i></i><a href="#">Terms</a></div>
+      </footer>
+    </section>
+  </main>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
